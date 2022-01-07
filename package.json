@@ -19,7 +19,8 @@
   "homepage": "https://github.com/dudgns2947/P-1#readme",
   "dependencies": {
     "express": "^4.17.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "browserify": "^16.5.2"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
