@@ -7,12 +7,13 @@ const app = express();
 const logger = morgan("dev");
 
 app.use(logger);
-app.use("/static", express.static(path.resolve(__dirname, "frontend", "static")));
+
+app.use(express.static("frontend"));
+
+const handleListening = () => console.log(`server listening on port http://localhost:${PORT} 💥`);
+
+app.listen(PORT, handleListening);
 
 app.get("/*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "frontend", "index.html"));
 });
-
-const handleListening = () => console.log(`server listening on port http://localhost:${PORT} 💥`);
-
-app.listen(process.env.PORT || PORT, handleListening);

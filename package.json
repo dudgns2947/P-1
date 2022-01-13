@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec npx babel-node src/server.js"
+    "dev": "nodemon --exec npx babel-node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,13 @@
   },
   "homepage": "https://github.com/dudgns2947/P-1#readme",
   "dependencies": {
+    "browserify": "^16.5.2",
+    "ejs": "^3.1.6",
     "express": "^4.17.2",
+    "jqeury": "^0.0.1-security",
+    "jquery": "^3.6.0",
     "morgan": "^1.10.0",
-    "browserify": "^16.5.2"
+    "pug": "^3.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
